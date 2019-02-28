@@ -62,10 +62,10 @@ int MaxSubseqSum3(int* arr, int size) {
     return DivideAndConquer3(arr, 0, size - 1);
 }
 
-int main(int argc, char** argv) {
-    int arr[] = {-2, 6, -1, 5, 4, -7, 2, 3};
-    cout << MaxSubseqSum3(arr, sizeof(arr)/sizeof(arr[0])) << endl;
-    
-    return 0;
-}
+//int main(int argc, char** argv) {
+//    int arr[] = {-2, 6, -1, 5, 4, -7, 2, 3};
+//    cout << MaxSubseqSum3(arr, sizeof(arr)/sizeof(arr[0])) << endl;
+//    
+//    return 0;
+//}
 
