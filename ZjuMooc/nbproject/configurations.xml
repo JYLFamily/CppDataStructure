@@ -4,7 +4,10 @@
     <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
     </logicalFolder>
     <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <logicalFolder name="f1" displayName="第一周" projectFiles="true">
+        <itemPath>MaxSubArray3.cpp</itemPath>
+        <itemPath>main.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
     </logicalFolder>
@@ -30,6 +33,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="MaxSubArray3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -53,6 +58,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="MaxSubArray3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
