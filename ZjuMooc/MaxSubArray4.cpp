@@ -33,10 +33,10 @@ int OnlineProcess(int* arr, int size) {
     return MaxSum;
 }
 
-int main(int argc, char** argv) {
-    int arr[] = {-2, 6, -1, 5, 4, -7, 2, 3};
-    cout << OnlineProcess(arr, sizeof(arr)/sizeof(arr[0])) << endl;
-    
-    return 0;
-}
+//int main(int argc, char** argv) {
+//    int arr[] = {-2, 6, -1, 5, 4, -7, 2, 3};
+//    cout << OnlineProcess(arr, sizeof(arr)/sizeof(arr[0])) << endl;
+//    
+//    return 0;
+//}
 
