@@ -38,7 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/MaxSubArray3.o \
 	${OBJECTDIR}/MaxSubArray4.o \
 	${OBJECTDIR}/MaximumSubsequenceSum.o \
-	${OBJECTDIR}/PolynomialArray.o
+	${OBJECTDIR}/PolynomialArray.o \
+	${OBJECTDIR}/PolynomialLinkedList.o
 
 
 # C Compiler Flags
@@ -84,6 +85,11 @@ ${OBJECTDIR}/PolynomialArray.o: PolynomialArray.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PolynomialArray.o PolynomialArray.cpp
+
+${OBJECTDIR}/PolynomialLinkedList.o: PolynomialLinkedList.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PolynomialLinkedList.o PolynomialLinkedList.cpp
 
 # Subprojects
 .build-subprojects:
