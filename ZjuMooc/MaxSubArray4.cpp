@@ -19,19 +19,19 @@ using namespace std;
  * 
  */
 
-int OnlineProcess(int* arr, int size) {
-    int ThisSum = 0;  //  当前子列和
-    int MaxSum = 0;  // 最大子列和
-    
-    for (int i = 0; i < size; i++) {
-        ThisSum += arr[i];
-        
-        if (ThisSum > MaxSum) MaxSum = ThisSum;
-        if (ThisSum < 0) ThisSum = 0;  // 当前子列和为负，不需要考虑
-    }
-    
-    return MaxSum;
-}
+//int OnlineProcess(int* arr, int size) {
+//    int ThisSum = 0;  //  当前子列和
+//    int MaxSum = 0;  // 最大子列和
+//    
+//    for (int i = 0; i < size; i++) {
+//        ThisSum += arr[i];
+//        
+//        if (ThisSum > MaxSum) MaxSum = ThisSum;
+//        if (ThisSum < 0) ThisSum = 0;  // 当前子列和为负，不需要考虑
+//    }
+//    
+//    return MaxSum;
+//}
 
 //int main(int argc, char** argv) {
 //    int arr[] = {-2, 6, -1, 5, 4, -7, 2, 3};

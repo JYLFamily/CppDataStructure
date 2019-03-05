@@ -9,6 +9,9 @@
         <itemPath>MaxSubArray4.cpp</itemPath>
         <itemPath>MaximumSubsequenceSum.cpp</itemPath>
       </logicalFolder>
+      <logicalFolder name="f2" displayName="第二周" projectFiles="true">
+        <itemPath>PolynomialArray.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
     </logicalFolder>
@@ -40,6 +43,8 @@
       </item>
       <item path="MaximumSubsequenceSum.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="PolynomialArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -66,6 +71,8 @@
       <item path="MaxSubArray4.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="MaximumSubsequenceSum.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PolynomialArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

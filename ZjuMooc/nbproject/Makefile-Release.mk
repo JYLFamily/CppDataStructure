@@ -37,7 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/MaxSubArray3.o \
 	${OBJECTDIR}/MaxSubArray4.o \
-	${OBJECTDIR}/MaximumSubsequenceSum.o
+	${OBJECTDIR}/MaximumSubsequenceSum.o \
+	${OBJECTDIR}/PolynomialArray.o
 
 
 # C Compiler Flags
@@ -78,6 +79,11 @@ ${OBJECTDIR}/MaximumSubsequenceSum.o: MaximumSubsequenceSum.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MaximumSubsequenceSum.o MaximumSubsequenceSum.cpp
+
+${OBJECTDIR}/PolynomialArray.o: PolynomialArray.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PolynomialArray.o PolynomialArray.cpp
 
 # Subprojects
 .build-subprojects:
