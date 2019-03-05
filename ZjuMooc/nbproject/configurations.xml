@@ -10,6 +10,7 @@
         <itemPath>MaximumSubsequenceSum.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="第二周" projectFiles="true">
+        <itemPath>LinearListArray.cpp</itemPath>
         <itemPath>PolynomialArray.cpp</itemPath>
         <itemPath>PolynomialLinkedList.cpp</itemPath>
       </logicalFolder>
@@ -38,6 +39,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="LinearListArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="MaxSubArray3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="MaxSubArray4.cpp" ex="false" tool="1" flavor2="0">
@@ -69,6 +72,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="LinearListArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="MaxSubArray3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="MaxSubArray4.cpp" ex="false" tool="1" flavor2="0">
