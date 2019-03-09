@@ -36,11 +36,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/LinearListArray.o \
+	${OBJECTDIR}/LinearListLinkedList.o \
 	${OBJECTDIR}/MaxSubArray3.o \
 	${OBJECTDIR}/MaxSubArray4.o \
 	${OBJECTDIR}/MaximumSubsequenceSum.o \
 	${OBJECTDIR}/PolynomialArray.o \
-	${OBJECTDIR}/PolynomialLinkedList.o
+	${OBJECTDIR}/PolynomialLinkedList.o \
+	${OBJECTDIR}/StackArray.o \
+	${OBJECTDIR}/StackLinkedList.o
 
 
 # C Compiler Flags
@@ -72,6 +75,11 @@ ${OBJECTDIR}/LinearListArray.o: LinearListArray.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LinearListArray.o LinearListArray.cpp
 
+${OBJECTDIR}/LinearListLinkedList.o: LinearListLinkedList.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LinearListLinkedList.o LinearListLinkedList.cpp
+
 ${OBJECTDIR}/MaxSubArray3.o: MaxSubArray3.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -96,6 +104,16 @@ ${OBJECTDIR}/PolynomialLinkedList.o: PolynomialLinkedList.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PolynomialLinkedList.o PolynomialLinkedList.cpp
+
+${OBJECTDIR}/StackArray.o: StackArray.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StackArray.o StackArray.cpp
+
+${OBJECTDIR}/StackLinkedList.o: StackLinkedList.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StackLinkedList.o StackLinkedList.cpp
 
 # Subprojects
 .build-subprojects:
