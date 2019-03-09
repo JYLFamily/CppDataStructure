@@ -16,57 +16,59 @@
 #define ERROR -999999
 using namespace std;
 
-typedef int ElementType;
-struct SNode {
-    ElementType Data[MAXSIZE];
-    int Top;
-};
-typedef struct SNode* Stack;
-
-Stack CreateStack() {
-    Stack PtrsS = (Stack) malloc(sizeof(SNode));
-    PtrsS->Top = -1;
-    
-    return PtrsS;
-}
-
-int IsFull(Stack PtrS) {
-    if (PtrS->Top ==  MAXSIZE - 1) return 1;  // 已满
-    else return 0;  // 未满 
-}
-
-int IsEmpty (Stack PtrS) {
-    if (PtrS->Top ==  -1) return 1;  // 已空
-    else return 0;  // 未空 
-}
-
-void Push(Stack PtrS, ElementType item) {
-    if (IsFull(PtrS) == 1) {
-        cout << "已满" << endl;
-        
-        return; 
-    }
-    else {
-        PtrS->Data[PtrS->Top + 1] = item;  // PtrS->Data[++(PtrS->Top)] = item;
-        PtrS->Top += 1;
-        
-        return;
-    }
-}
-
-ElementType Pop(Stack PtrS) {
-    if (IsEmpty(PtrS) == 1) {
-        cout << "已空" << endl;
-        
-        return ERROR; 
-    }
-    else {
-        return PtrS->Data[--(PtrS->Top)];
-    }
-}
-
-int main(int argc, char** argv) {
-
-    return 0;
-}
+//typedef int ElementType;
+//struct SNode {
+//    ElementType Data[MAXSIZE];
+//    int Top;
+//};
+//typedef struct SNode* Stack;
+//
+//Stack CreateStack() {
+//    Stack PtrsS = (Stack) malloc(sizeof(SNode));
+//    PtrsS->Top = -1;
+//    
+//    return PtrsS;
+//}
+//
+//int IsFull(Stack PtrS) {
+//    if (PtrS->Top ==  MAXSIZE - 1) return 1;  // 已满
+//    else return 0;  // 未满 
+//}
+//
+//int IsEmpty (Stack PtrS) {
+//    if (PtrS->Top ==  -1) return 1;  // 已空
+//    else return 0;  // 未空 
+//}
+//
+//void Push(Stack PtrS, ElementType item) {
+//    if (IsFull(PtrS) == 1) {
+//        cout << "已满" << endl;
+//        
+//        return; 
+//    }
+//    else {
+//        PtrS->Data[++(PtrS->Top)] = item;  // ++i 表达式的值使用之前 + 1 
+//        
+//        return;
+//    }
+//}
+//
+//ElementType Pop(Stack PtrS) {
+//    if (IsEmpty(PtrS) == 1) {
+//        cout << "已空" << endl;
+//        
+//        return ERROR; 
+//    }
+//    else {
+//        return PtrS->Data[(PtrS->Top)--];  // i-- 表达式的值使用之后 - 1 
+//    }
+//}
+//
+//int main(int argc, char** argv) {
+//    Stack PtrS = CreateStack();
+//    for (int i = 0; i < 3; i++) Push(PtrS, i);
+//    for (int i = PtrS->Top; i != -1; i--) cout << Pop(PtrS) << " ";
+//  
+//    return 0;
+//}
 
