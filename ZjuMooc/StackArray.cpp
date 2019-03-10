@@ -24,10 +24,10 @@ using namespace std;
 //typedef struct SNode* Stack;
 //
 //Stack CreateStack() {
-//    Stack PtrsS = (Stack) malloc(sizeof(SNode));
-//    PtrsS->Top = -1;
+//    Stack PtrS = (Stack) malloc(sizeof(SNode));
+//    PtrS->Top = -1;
 //    
-//    return PtrsS;
+//    return PtrS;
 //}
 //
 //int IsFull(Stack PtrS) {
