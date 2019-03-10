@@ -12,6 +12,7 @@
  */
 
 #include <iostream>
+#include <math>
 #define MAXSIZE 100000
 #define ERROR -999999
 using namespace std;
