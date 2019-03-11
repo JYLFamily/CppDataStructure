@@ -42,6 +42,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/MaximumSubsequenceSum.o \
 	${OBJECTDIR}/PolynomialArray.o \
 	${OBJECTDIR}/PolynomialLinkedList.o \
+	${OBJECTDIR}/QueueArray.o \
 	${OBJECTDIR}/StackArray.o \
 	${OBJECTDIR}/StackLinkedList.o
 
@@ -104,6 +105,11 @@ ${OBJECTDIR}/PolynomialLinkedList.o: PolynomialLinkedList.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PolynomialLinkedList.o PolynomialLinkedList.cpp
+
+${OBJECTDIR}/QueueArray.o: QueueArray.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/QueueArray.o QueueArray.cpp
 
 ${OBJECTDIR}/StackArray.o: StackArray.cpp
 	${MKDIR} -p ${OBJECTDIR}
