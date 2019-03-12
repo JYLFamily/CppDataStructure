@@ -19,26 +19,26 @@ using namespace std;
 typedef int ElementType;
 struct QNode {
     ElementType Data[MAXSIZE];
-    int front;  // 队首指针，指向队首元素
-    int rear;  // 队尾指针，指向队尾元素 + 1
+    int Front;  // 队首指针，指向队首元素
+    int Rear;  // 队尾指针，指向队尾元素 + 1
 };
 typedef struct QNode* Queue;
 
 Queue CreateQueue() {
     Queue PtrQ = (Queue) malloc(sizeof(QNode));
-    PtrQ->front = 0;
-    PtrQ->rear = 0;
+    PtrQ->Front = 0;
+    PtrQ->Rear = 0;
     
     return PtrQ;
 }
 
 int IsFull(Queue PtrQ) {
-    if (PtrQ->rear == MAXSIZE) return 1;  // 已满
+    if (PtrQ->Rear == MAXSIZE) return 1;  // 已满
     else return -1;  // 未满
 }
 
 int IsEmpty(Queue PtrQ) {
-    if (PtrQ->front >= PtrQ->rear) return 1;  // 已空
+    if (PtrQ->Front >= PtrQ->Rear) return 1;  // 已空
     else return -1;  // 未空
 }
 
@@ -49,7 +49,7 @@ void AddQ(ElementType item, Queue PtrQ) {
         return;
     } 
     
-    PtrQ->Data[(PtrQ->rear)++] = item;
+    PtrQ->Data[(PtrQ->Rear)++] = item;
 }
 
 ElementType DeleteQ(Queue PtrQ) {
@@ -59,7 +59,7 @@ ElementType DeleteQ(Queue PtrQ) {
         return ERROR;
     }     
             
-    return PtrQ->Data[(PtrQ->front)++];
+    return PtrQ->Data[(PtrQ->Front)++];
 }
 
 
