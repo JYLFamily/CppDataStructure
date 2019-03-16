@@ -15,6 +15,7 @@
         <itemPath>PolynomialArray.cpp</itemPath>
         <itemPath>PolynomialLinkedList.cpp</itemPath>
         <itemPath>QueueArray.cpp</itemPath>
+        <itemPath>QueueArrayCircular.cpp</itemPath>
         <itemPath>QueueArrayFrontRear.cpp</itemPath>
         <itemPath>StackArray.cpp</itemPath>
         <itemPath>StackLinkedList.cpp</itemPath>
@@ -60,6 +61,8 @@
       </item>
       <item path="QueueArray.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="QueueArrayCircular.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="QueueArrayFrontRear.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="StackArray.cpp" ex="false" tool="1" flavor2="0">
@@ -102,6 +105,8 @@
       <item path="PolynomialLinkedList.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="QueueArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QueueArrayCircular.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="QueueArrayFrontRear.cpp" ex="false" tool="1" flavor2="0">
       </item>

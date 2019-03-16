@@ -43,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/PolynomialArray.o \
 	${OBJECTDIR}/PolynomialLinkedList.o \
 	${OBJECTDIR}/QueueArray.o \
+	${OBJECTDIR}/QueueArrayCircular.o \
 	${OBJECTDIR}/QueueArrayFrontRear.o \
 	${OBJECTDIR}/StackArray.o \
 	${OBJECTDIR}/StackLinkedList.o
@@ -111,6 +112,11 @@ ${OBJECTDIR}/QueueArray.o: QueueArray.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/QueueArray.o QueueArray.cpp
+
+${OBJECTDIR}/QueueArrayCircular.o: QueueArrayCircular.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/QueueArrayCircular.o QueueArrayCircular.cpp
 
 ${OBJECTDIR}/QueueArrayFrontRear.o: QueueArrayFrontRear.cpp
 	${MKDIR} -p ${OBJECTDIR}
